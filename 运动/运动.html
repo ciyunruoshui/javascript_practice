@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>练习</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="move.js"></script>
+	<script type="text/javascript">
+          window.onload=function(){
+          	var li=document.getElementsByTagName('li');
+          	for(var i=0,len=li.length;i<len;i++)
+          	{
+          		li[i].timer=null;
+          		li[i].onmouseover=function(){
+          			m.moveevent(this,{width:600,height:300});
+          		}
+          		li[i].onmouseout=function(){
+          			m.moveevent(this,{width:200,height:100});
+          	    }
+          }
+      }
+	</script>
+</head>
+<body>	
+<ul>
+	<li></li>
+	<li></li>
+</ul>
+</body>
+</html>
